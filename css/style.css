@@ -1,0 +1,36 @@
+/* DEFAULTS */
+
+
+/* HEADER */
+#header {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+#header nav , ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 40px;
+}
+#header ul {
+    width: 40%;
+}
+#header a {
+    color: white;
+}
+/* SECOND  */
+#hero  {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+
+}
+.booknow {
+    width: 70%;
+    background-color: #f8ca11;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 4rem;
+}

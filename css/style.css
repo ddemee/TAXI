@@ -34,9 +34,10 @@ img {
     width: 100%;
     background-color: #f8ca11;
     height: auto;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     margin-bottom: 4rem;
+    border-radius: 10px;
 }
 #hero form {
     background-color: #B3B3B3;

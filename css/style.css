@@ -1,12 +1,15 @@
 /* DEFAULTS */
 
+img {
+    width: 100%;
+}
 
 /* HEADER */
 #header {
     background-color: #1a1a1a;
     padding: 10px 0;
 }
-#header nav , ul {
+#header nav , ul  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,11 +29,17 @@
     padding: 20px 0;
 
 }
+
 .booknow {
-    width: 70%;
+    width: 100%;
     background-color: #f8ca11;
     height: auto;
     padding: 10px;
     text-align: center;
     margin-bottom: 4rem;
+}
+#hero form {
+    background-color: #B3B3B3;
+    padding: 25px;
+    border-radius: 5px;
 }

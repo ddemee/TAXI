@@ -33,7 +33,7 @@ h3 {
 }
 /* SECOND  */
 #hero  {
-    background-color: #1a1a1a;
+    background-color:  #333333 ;
     padding: 20px 0;
 
 }
@@ -70,12 +70,16 @@ input , select{
 }
 /* CARS  */
 #cars {
-    margin-top: 50px;
     padding: 80px 0 ;
     background-color: #161c1e; 
+    background-image: url(../img/teddy-yang-2400533.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.cards{
+#cars .cards{
     width: 35ch;
     padding: 15px;
     background-color: white;
@@ -92,3 +96,28 @@ input , select{
     font-weight: 700;
     margin: -45px  auto  20px;
 }
+/*  */
+.our_text{
+     width: 100%;
+     float: left;
+     text-align: center;
+     font-size: 50px;
+     color: #fefefe;
+     font-weight: bold;
+     margin: -50px 0 50px;
+}
+.ride_section {
+    width: 100%;
+    float: left;
+}
+.ride_text {
+    padding: 25px 0 0;
+    width: 100%;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #2b3436;
+    font-size: 50px;
+    margin-left: 0px;
+    border-bottom: 1px solid #000;
+}
+/*  */

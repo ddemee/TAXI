@@ -13,6 +13,12 @@
     .booknow {
         width: 70%;
     }
+    .cars-info {
+     
+        display: flex;
+        align-self: center;
+        justify-content: space-around;  
+    }
 }
 
 @media (min-width: 992px) {

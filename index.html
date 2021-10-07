@@ -64,10 +64,10 @@
             <div>
                     <form action="/">
                       <div class="banner">
-                        <h1>Car Booking </h1>
+                        <h3>Car Booking </h3>
                       </div>
                       <div class="item">
-                        <p>Contact Address</p>
+                        <p>Pick Up Address</p>
                         <input type="text" name="name" placeholder="Street address" />
                         <input type="text" name="name" placeholder="Street address line 2" />
                         <div class="city-item">
@@ -75,34 +75,39 @@
                           <input type="text" name="name" placeholder="Region" />
                         </div>
                       </div>
-                      <div class="item">
-                        <p>Pick Up Date</p>
-                        <input type="date" name="bdate"  min="2021-07-01"/>
-                        <i class="fas fa-calendar-alt"></i>
-                      </div>
-                      <div class="item">
-                        <p>Pick Up Time</p>
-                        <input type="time" name="name" />
-                        <i class="fas fa-clock"></i>
-                      </div>
-                   
-                   
-                      <div class="item">
-                        <p>Number of Passengers</p>
-                        <input type="text" name="name"/>
+                      <div class="flex">
+                        <div class="item">
+                            <p>Pick Up Date</p>
+                            <input type="date" name="bdate"  min="2021-07-01"/>
+                            <i class="fas fa-calendar-alt"></i>
+                            
+                          </div>
+                          <div class="item">
+                            <p>Pick Up Time</p>
+                            <input type="time" name="name" />
+                            <i class="fas fa-clock"></i>
+                          </div>
                       </div>
                       <div class="item">
                         <p>Phone</p>
                         <input type="text" name="name"/>
                       </div>
+                      <div class="item">
+                        <p>Drop Address</p>
+                        <input type="text" name="name" placeholder="Street address" />
+                        <input type="text" name="name" placeholder="Street address line 2" />
+                        <div class="city-item">
+                          <input type="text" name="name" placeholder="City" />
+                          <input type="text" name="name" placeholder="Region" />
+                        </div>
                     
                       <div class="question">
                         <p>Choose a car type</p>
                         <select name="" id="">
-                            <option value="volvo">Limousine (8-12 person)</option>
-                            <option value="saab">SUV (6-7 person)</option>
-                            <option value="mercedes">Van (12-15 person)</option>
-                            <option value="audi">Bus (50+ person)</option>
+                            <option value="Limousine (8-12 person)">Limousine (8-12 person)</option>
+                            <option value="SUV (6-7 person)">SUV (6-7 person)</option>
+                            <option value="Van (12-15 person)">Van (12-15 person)</option>
+                            <option value="Bus (50+ person)">Bus (50+ person)</option>
                         </select>
                       </div>
                     
@@ -123,5 +128,32 @@
         </div>
     </section>
     <!-- SECOND -->
+    <section id="cars">
+        <div class="container cars-info">
+            <div class="cards">
+                <p class="position">01</p>
+                <h4>CAR 1</h4>
+                <p>act that a reader will be
+                    distracted</p>
+                    <img src="img/cars/toyota.png" alt="">
+            </div>
+            <div class="cards">
+                <p class="position">02</p>
+                <h4>CAR 2</h4>
+                <p>act that a reader will be
+                    distracted</p>
+                    <img src="img/cars/Taxi-PNG-Image-33636.png" alt="">
+            </div>
+            <div class="cards">
+                <p class="position">03</p>
+                <h4>CAR 3</h4>
+                <p>act that a reader will be
+                    distracted</p>
+                    <img src="img/cars/bus.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    
 </body>
 </html>

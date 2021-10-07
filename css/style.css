@@ -3,6 +3,14 @@
 img {
     width: 100%;
 }
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+h3 {
+    color: black;
+    font-size: 2rem;
+}
 
 /* HEADER */
 #header {
@@ -37,10 +45,50 @@ img {
     padding: 10px 20px;
     text-align: center;
     margin-bottom: 4rem;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #hero form {
-    background-color: #B3B3B3;
-    padding: 25px;
+    background-color: #fefefe;
+    padding: 25px 25px 80px;
     border-radius: 5px;
+}
+input , select{
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #e1e1e1;
+}
+#hero button {
+    background-color: #353433;
+   color: white;
+   font-size: 1rem;
+   padding: 10px 30px;
+   border-radius: 5px;
+   float: right;
+   margin: 10px 0;
+}
+/* CARS  */
+#cars {
+    margin-top: 50px;
+    padding: 80px 0 ;
+    background-color: #161c1e; 
+}
+
+.cards{
+    width: 35ch;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+.position{
+    background-color: gold;
+    border-radius: 60px;
+    width: min-content;
+    padding: 12px 18px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: -45px  auto  20px;
 }

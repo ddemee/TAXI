@@ -122,6 +122,17 @@ input , select{
     margin-left: 0px;
     border-bottom: 1px solid #000;
 }
+#info {
+    padding: 50px 0;
+}
+#info img {
+    max-width: 600px;
+}
+.info-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /* FOOTER */
 .account_text {
     width: 100%;

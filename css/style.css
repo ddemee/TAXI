@@ -128,11 +128,8 @@ input , select{
 #info img {
     max-width: 600px;
 }
-.info-cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
+
 /* FOOTER */
 .account_text {
     width: 100%;

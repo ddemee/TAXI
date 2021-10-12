@@ -60,17 +60,23 @@ h3 {
     background-color: #f8ca11;
     height: auto;
     padding: 10px 20px;
-    text-align: center;
     margin-bottom: 4rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booknow img {
+    max-width: 60px;
+    width: 100%;
+    margin-right: 30px;
 }
 #hero form {
     background-color: #fefefe;
     padding: 25px 25px 80px;
     border-radius: 5px;
 }
-#hero img {
-
+.hero-img {
     margin: 150px 50px 0 0;
 }
 input , select{

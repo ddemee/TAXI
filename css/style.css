@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Roboto&display=swap');
+
 /* DEFAULTS */
 
 img {
@@ -24,10 +28,24 @@ h3 {
     justify-content: space-between;
 }
 .logo {
-    font-size: 40px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
 }
+.global {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    
+
+    
+}
+
 #header ul {
     width: 40%;
+    padding: 15px 0 0;
 }
 #header a {
     color: white;
@@ -35,10 +53,8 @@ h3 {
 /* SECOND  */
 #hero  {
     background-color:  #333333 ;
-    padding: 20px 0;
-
+    padding: 50px 0;
 }
-
 .booknow {
     width: 100%;
     background-color: #f8ca11;
@@ -52,6 +68,10 @@ h3 {
     background-color: #fefefe;
     padding: 25px 25px 80px;
     border-radius: 5px;
+}
+#hero img {
+
+    margin: 150px 50px 0 0;
 }
 input , select{
     padding: 5px;

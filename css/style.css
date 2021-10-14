@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Roboto&display=swap');
 
 /* DEFAULTS */
+body a {
+    text-decoration: none;
+}
 
 img {
     width: 100%;
@@ -16,6 +19,9 @@ h3 {
     color: black;
     font-size: 2rem;
 }
+h2 {
+    margin-top: 1rem;
+}
 
 /* HEADER */
 #header {
@@ -28,7 +34,7 @@ h3 {
     justify-content: space-between;
 }
 .logo {
-    max-width: 400px;
+    max-width: 250px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,29 +53,36 @@ h3 {
     width: 40%;
     padding: 15px 0 0;
 }
-#header a {
+nav a {
     color: white;
+    transition: all ease-in 0.25s;
+}
+nav a:hover {
+    color: #F0A500;
+    
 }
 /* SECOND  */
 #hero  {
-    background-color:  #333333 ;
+    background-color:  #333333;
     padding: 50px 0;
 }
 .booknow {
     width: 100%;
-    background-color: #f8ca11;
+    background-color: #F0A500;
     height: auto;
     padding: 10px 20px;
     margin-bottom: 4rem;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
-.booknow img {
-    max-width: 60px;
-    width: 100%;
-    margin-right: 30px;
+.booknow i {
+    margin-right: 50px;
+}
+#hero a {
+    color: black;
+}
+#hero a:hover{
+    color: blue;
 }
 #hero form {
     background-color: #fefefe;
@@ -116,7 +129,7 @@ input , select{
     margin: 40px auto;
 }
 .position{
-    background-color: gold;
+    background-color: #F0A500;
     border-radius: 60px;
     width: min-content;
     padding: 12px 18px;
@@ -149,10 +162,83 @@ input , select{
     border-bottom: 1px solid #000;
 }
 #info {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 #info img {
-    max-width: 600px;
+    max-width: 500px;
+}
+.info-cards a {
+
+    margin: 30px 0;
+    padding: 15px 30px;
+    background-color: #2b3436;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.info-cards a:hover , .info-cards a:focus {
+    background-color:#F0A500  ;
+    border-radius: 5px;
+    color: #fff;
+
+}
+.order {
+    text-align: end;
+}
+/* Contact US */
+#contactus {
+    padding: 80px 0;
+    position: relative;
+    background-image: url(../img/city-taxi.jpg);
+    background-position: bottom;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 30px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+.cont {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+#contactus img {
+    max-width: 700px;
+    width: 100%;
+}
+#contact input {
+    margin: 5px 0;
+    background-color: transparent;
+    color: #000;
+}
+#contact textarea {
+    resize: none;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+#contact button {
+    margin: 30px 0;
+    padding: 15px 30px;
+    background-color: #F0A500;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+#contact button:hover{
+    background-color: #2b3436;
 }
 
 
@@ -202,11 +288,10 @@ input , select{
 .section_footer {
     width: 100%;
     float: left;
-    background-color: #292828;
+    background-color: #000000;
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 90px;
 }
 
 .ipsum_text{

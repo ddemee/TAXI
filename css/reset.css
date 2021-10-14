@@ -47,6 +47,18 @@ table {
 a {
 	text-decoration: none; /* no underline */
   }
+a:hover {
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
   
 button {
 	outline: none;

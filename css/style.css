@@ -78,6 +78,11 @@ nav a:hover {
 .booknow i {
     margin-right: 50px;
 }
+.app {
+    background-color: green;
+    border-radius: 30px;
+    color: white;
+}
 #hero a {
     color: black;
 }

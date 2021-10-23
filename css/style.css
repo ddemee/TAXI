@@ -526,3 +526,37 @@ input , select{
 html {
     scroll-behavior: smooth;
 }
+
+/* TAXI FARE */
+.taxi-services {
+    padding: 20px 0;
+    background-image: url(../img/fare.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.taxi-services h1 {
+    color: #000;
+}
+.services {
+    background-color: rgba(228, 228, 228, 0.76);
+    box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.41);
+    -webkit-box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.41);
+    -moz-box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.41);
+    padding:50px 30px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.ordernow {
+    width: 50%;
+    padding: 30px 20px;
+    background-color: #F0A500;
+    height: max-content;
+}
+#wappen img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}

@@ -139,6 +139,9 @@ textarea {
 {
   position: relative;
 }
+.relative {
+  position: relative;
+}
 .effect2:before, .effect2:after
 {
   z-index: -1;

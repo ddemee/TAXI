@@ -1,3 +1,18 @@
+<?php
+if(!empty($_POST["send"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$number = $_POST["number"];
+	$content = $_POST["content"];
+
+	$toEmail = "admin@phppot_samples.com";
+	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+	if(mail($toEmail, $number, $content, $mailHeaders)) {
+	    $message = "Your contact information is received successfully.";
+	    $type = "success";
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,101 +50,71 @@
 <body>
     <!-- HEADER -->
     <header id="header">
-      <div class="container">
-          <nav>
-                  <a class="logo" href="index.html">Global Taxi</a>
-              <ul class="nav-links">
-                  <li><a href="index.html">HOME</a></li>
-                  <li>
-                    <div class="dropdown">
-                      <button class="dropbtn">Dienstleistungen</button>
-                      <div class="dropdown-content">
-                        <a href="taxifarech.html"> Taximetertarif </a>
-                        <a href="taxiservicech.html">TAXI SERVICE</a>
-                        <a href="promobilech.html">PROMOBILE</a>
-                        <a href="courierch.html">EXPRESS courier</a>
-                        <a href="businessch.html">business</a>
-                        <a href="tandemtaxich.html">Tandem taxi</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li><a href="booking.html">BOOKING</a></li>
-                  <li><a href="#contactus"> Kontakt </a></li>
-              </ul>
-              <div class="navbar">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars burgerbar"></i></button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel"></h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="booking.html">BOOKING</a></li>
-                  <li><a href="#contactus">CONTACT US</a></li>
-                </div>
-              </div>
-              </div>
-          </nav>
-      </div>
-  </header>
-    <!-- TAXI FARE -->
-    <section class="taxi-services" >
-      <div class="container services">
-        <div class="large-8 columns text">
-          <div class="hide-for-small" id="breadcrumbs">
-              <!-- responsive breadcrumbs-->
-
+        <div class="container">
+          <div class="language-menu">
+            <ul class="language-bar">
+              <li><a href="index.html">GER</a></li>
+              <li><a class="active" href="indexeng.html">ENG</a></li>
+              <li><a href="#">RUS</a></li>
+             </ul>
           </div>
-          <div id="main">
-            <h1>Taximetertarif / Taxikosten</h1>
-            <div id="wappen">
-              <img src="img/dietikon.svg" alt="Dietikon Stadt Wappen">
-            </div>
-            <table style="padding-left: 20px;" width="80%">
-              <tbody>
-                <tr>
-                  <td style="text-align: left;">1. Grundtaxe </td>
-                  <td style="text-align: left;"> </td>
-                  <td style="text-align: left;">Fr. 6.00 </td>
-                </tr>
-                <tr>
-                  <td>2. Fahrtaxe </td>
-                  <td>pro km </td>
-                  <td>Fr. 3.80 </td>
-                </tr>
-                <tr>
-                  <td>3. Grosse-Taxi </td>
-                  <td>5-8 Personen pro km </td>
-                  <td>Fr. 5.20</td>
-                </tr>
-                <tr>
-                  <td>4. Wartezeit </td>
-                  <td>pro Stunde </td>
-                  <td>Fr. 69.00</td>
-                </tr>
-              </tbody>
-            </table>
-            <p><b>Tiere an Bord</b><br>
-            Kleintiere sind problemlos im Taxi mitzuführen, solange sie in einer Tasche oder einem Käfig gesichert transportiert werden können. Bitte informieren Sie uns bei der Bestellung, wenn Sie gerne Tiere mitführen möchten.<br>
-            <br>
-            <b>Gepäck an Bord</b><br>
-            Normalerweise kann im Taxi ohne Aufschlag dasselbe Gepäck ohne Kostenfolge mitgeführt werden wie in einem Flugzeug. Beim Ein- und Ausladen sind unsere Taxichauffeure gerne behilflich. Für das Hin- und Wegtragen kann allenfalls ein Unkostenbeitrag erhoben werden. </p>
-            <br>
-            <h2>Taxiverordnung</h2>
-            <p> Global Taxi Limmattal untersteht der Taxiverodnung von Dietikon,
-            diese können Sie <b><a href="#">hier</a></b> finden.<br>
-            Unsere Preise werden wie oben erwähnt in der Taxiverordnung von Dietikon bestimmt.<br><br>
-            Hier ein Zitat aus der Taxiverodnung - Dietikon. <br> <br>
-            Art. 26<br>
-            1) Der Stadtrat erlässt eine Tarifordnung im Sinne eine Höchtstarifs für <br>
-            Fahrpreise, Wartezeit-Taxen und besondere Dienstleistungen. Zur Überprüfung des Fahrpreises muss die Taxuhr verwendet werden. <br>
-            </p>
-            </div>
+            <nav>
+                    <a class="logo" href="indexeng.html">Global Taxi</a>
+                <ul class="nav-links">
+                    <li><a href="indexeng.html">HOME</a></li>
+                    <li>
+                      <div class="dropdown">
+                        <button class="dropbtn">service</button>
+                        <div class="dropdown-content">
+                          <a href="taxifareeng.html"> Taxi fare </a>
+                          <a href="taxiserviceeng.html">TAXI SERVICE</a>
+                          <a href="promobileeng.html">PROMOBILE</a>
+                          <a href="couriereng.html">EXPRESS courier</a>
+                          <a href="businesseng.html">business</a>
+                          <a href="tandemtaxieng.html">Tandem taxi</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="booking.html">BOOKING</a></li>
+                    <li><a href="contactuseng.html"> Kontakt </a></li>
+                </ul>
+                <div class="navbar">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars burgerbar"></i></button>
+  
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-      </div>
-    </section>
+                  <div class="offcanvas-body">
+                    <li><a href="indexeng.html">HOME</a></li>
+                    <li><a href="booking.html">BOOKING</a></li>
+                    <li><a href="contactuseng.html">CONTACT US</a></li>
+                  </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+     <!-- contact us  -->
+     <section id="contactus">
+        <div class="container">
+          
+  
+   
+        <div class="jumbotron text-center">
+			<h1 class="display-3">Thank You!</h1>
+			<p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
+			<hr>
+			<p>
+				Having trouble? <a href="">Contact us</a>
+			</p>
+			<p class="lead">
+				<a class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" role="button">Continue to homepage</a>
+			</p>
+		</div>
+        </div>
+      </section>
     <!-- FOOTER -->
     <footer id="footer">
       <div class="section_footer ">

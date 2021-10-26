@@ -6,7 +6,7 @@
 
 /* DEFAULTS */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 img {
@@ -28,7 +28,6 @@ h2 {
 /* HEADER */
 #header {
     background-color: #1a1a1a;
-    padding: 10px 0;
 }
 #header nav  {
     display: flex;
@@ -78,6 +77,52 @@ nav a:hover {
     text-align: center;
     
 }
+/* language */
+.language-menu {
+    text-align: right;
+    min-height: 1.6em;
+  }
+  
+  .language-bar {
+    margin: 0;
+  }
+  
+  .language-bar li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 1em;
+    font-family: Helvetica;
+    font-weight: 400;
+    line-height: 1.6em;
+    vertical-align: baseline;
+      color: white;
+  }
+  
+  .language-bar li {
+    border-right: 1.5px solid white;
+  }
+  
+  .language-bar li:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .language-bar li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .language-bar li a:hover {
+    text-decoration: underline;
+  }
+  
+   @media only screen and (max-width: 768px) {
+     .language-menu {text-align: center;}
+  }
+  .language-bar li .active {
+      color: #F0A500;
+      text-decoration: underline;
+  }
 /* DROPDOWN */
 .dropbtn {
     background-color: transparent;
@@ -556,6 +601,19 @@ html {
     background-color: #F0A500;
     height: max-content;
 }
+.ordernow a {
+    color: #000;
+    font-size: 22px;
+    transition: all ease 0.2s;
+
+}
+.ordernow a:hover{
+    color: white;
+}
+.ordernow i {
+    margin-right: 10px;
+}
+
 #wappen img {
     max-width: 300px;
     display: block;
